@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+.App {
+  width: auto!important; 
+  overflow-x: hidden!important
+}
+
+
 footer {
   display: flex;
   justify-content: center;
@@ -132,9 +138,29 @@ li {
 
 }
 
+#saannot img {
+  transition: transform .3s ease-in-out;
+}
+
+#saannot img:hover {
+
+  transform: scale(1.07) rotate(15deg);
+
+}
+
+#saannot img:active {
+
+
+  transform: rotate(30deg);
+
+
+}
+
+
+
 #saannot {
-  background-color: #eeebdf;
-  padding: 5rem;
+  background-color: #eeece3;
+  padding: 1rem 5rem;
 }
 
 #mobile-header-img {
@@ -150,11 +176,11 @@ li {
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   li {
-    font-size: 12px;
+    font-size: 14px;
   }
 
  #img-header {
@@ -182,9 +208,9 @@ li {
   }
 
   .introduction {
-    padding: 0;
+    padding: 1rem;
     margin: auto;
-    width: 80%;
+    width: auto;
   }
 
   .side-by-side {
@@ -217,6 +243,8 @@ li {
     width: 150px;
   }
 
+
+  
   ol {
     padding: 0;
   }
@@ -227,7 +255,7 @@ li {
 
   #saannot {
     padding: 1rem;
-    width: 90%;
+    width: auto;
   }
 
   footer h3 {

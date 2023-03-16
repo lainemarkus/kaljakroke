@@ -21,7 +21,7 @@ function App() {
         </h3>
         <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon torstaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat athenelaiset sekä athenenmieliset, jotka löytävät ympärilleen 4-6 hengen joukkueen.
           Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei ole pakko juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.
-          Joukkueesi voi ilmoittautua höyhen- tai raskassarjaan. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.</p>
+        </p>
 
       </div>
 
@@ -31,7 +31,7 @@ function App() {
         <div className="full-container">
           <p>Kaljakroketurnaukseen mahtuu 16 joukkuetta kumpaankin sarjaan. Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">16.4.2023 mennessä</span>!
           <br/><br/>Kutsuvieraille on oma kiintiö. Mikäli kutsuvieraskiintiöstä jää paikkoja yli, ne täytetään jonosijoille ilmoittautuneilla. 
-          <br/><br/>Osallistumismaksut ovat 8€/joukkue. 
+          <br/><br/>Osallistumismaksut ovat 8€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <br/><br/><a className="a-link" href="https://athene.fi/ilmo/325" rel="noreferrer noopener " target="blank" >Linkki ilmoittautumiseen</a>
           </p>
           </div>
@@ -84,13 +84,13 @@ function App() {
 
           <li>Joukkueen on kumottava kalja (tai muu 0.33L juoma) ennen seuraavan portin läpäisyä, muuten joukkue saa yhden sakkojuoman. Kaljan saa avata vasta edellisen portin läpäisyn jälkeen (aloituksessa tolppaan osumisen jälkeen), eli niitä ei voi juoda varastoon.</li>
 
-          <li>Portin läpäisystä saa uuden lyönnin. Mikäli joukkue läpäisee portin ja osuu toisen joukkueen palloon samalla lyönnillä, seuraa kaksi lisälyöntiä. Jos pallo menee portista läpi toisen joukkueen toimesta, saa läpäissyt joukkue avata kaljan, mutta ei ylimääräistä lyöntiä omalla vuorollaan. Toisen joukkueen palloon osumisesta tarkemmin kohdassa 5.</li>
+          <li>Portin läpäisystä saa uuden lyönnin. Mikäli joukkue läpäisee portin ja osuu toisen joukkueen palloon samalla lyönnillä, seuraa kaksi lisälyöntiä. Jos pallo menee portista läpi toisen joukkueen toimesta, saa läpäissyt joukkue avata kaljan, mutta ei ylimääräistä lyöntiä omalla vuorollaan.</li>
 
           <li>Tuplaportin läpäisystä saa juotavaksi kaksi kaljaa, jotka on juotava ennen seuraavaa normaalia porttia. Jos pallo pysähtyy tuplaportin porttien väliin, saa avata yhden kaljan, jota ei kuitenkaan tarvitse juoda kuin vasta ennen seuraavan yksittäisen portin läpäisyä.</li>
 
           <li>Mikäli pallo osuu toisen joukkueen palloon, saa lyönyt joukkue joko uuden lyönnin tai krokata toisen joukkueen pallon. Samalla kierroksella voi saada jokaisen muun joukkueen palloon osumisesta maksimissaan yhden uuden lyönnin tai krokkauksen. Krokkaamisessa lyödään omaa palloa, jonka päälle krokkaaja on asettanut oman jalkansa. Oma pallo siirretään toisen joukkueen pallon viereen, mikäli se on kauemmaksi vierinyt. Oma pallo ei saa liikkua krokatessa, siitä seuraa kaljasakko.</li>
 
-          <li>Jos portti mennään läpi väärältä puolelta, saa joukkue kaljasakon. Muustakin sääntöjen rikkomisesta voi pelin tuomari määrätä sakon tai useamman rikkeen vakavuudesta riippuen. Esimerkkejä yleisistä virheistä ovat pelin turha viivyttäminen (peliä ei siis saa viivyttää lisäajan saamiseksi kaljan juontiin), portin irtoaminen maasta, pallon työntäminen lyömisen sijaan (ensimmäisestä ko. virheestä huomautus, huomautuksen jälkeisistä rikkeistä sakkoa) sekä pallojen siirtely tai ohjailu kentällä. Sakot on juotava ennen maalitolppaan osumista, jotta joukkue voisi voittaa.</li>
+          <li>Jos portti mennään läpi väärältä puolelta, saa joukkue kaljasakon. Muustakin sääntöjen rikkomisesta voi pelin tuomari määrätä sakon tai useamman rikkeen vakavuudesta riippuen. Esimerkkejä yleisistä virheistä ovat pelin turha viivyttäminen (peliä ei siis saa viivyttää lisäajan saamiseksi kaljan juontiin), portin irtoaminen maasta, pallon työntäminen lyömisen sijaan (ensimmäisestä ko. virheestä huomautus, huomautuksen jälkeisistä rikkeistä sakkoa) sekä pallojen siirtely tai ohjailu kentällä. Sakot on juotava ennen maalitolppaan osumista.</li>
 
           <li>Rataa ei saa muuttaa, siihen kuuluvat risut ja kivet yms. Muiden pelivälineet tai lennelleet kaljatölkit saa kuitenkin siirtää pois tieltä.</li>
 
@@ -99,9 +99,9 @@ function App() {
           <li>Huijaaminen on sallittua, jos tuomari ei huomaa. Jos tuomari huomaa, hän voi määrätä sakkoja. Jos peli sujuu muutenkin hyvin, ei ole hyvien tapojen mukaista huijata.</li>
         </ol>
         <br/>
-        <p>Kilpailua ei suotane otettavan vakavana urheiluna, sillä urheilu humalassa voi olla vaarallista. Peli noudattelee "normaalin" kroketin sääntöjä löysähköin rantein.
+        <p>Kaljakrokettia pelataan, koska se on hauskaa. Kilpailua ei suotane otettavan vakavana urheiluna, sillä urheilu humalassa voi olla vaarallista. 
 
-            Tuomarit hoitavat radan, sääntöjen tarkkailun ja muut ongelmakohdat. Tuomarit eivät ole absoluuttisia eivätkä absolutisteja.</p>
+          Tuomarit hoitavat radan, sääntöjen tarkkailun ja muut ongelmakohdat. Tuomarit eivät ole absoluuttisia eivätkä absolutisteja.</p>
       </div>
       <div className="img-container">
         <img src='/sandels.png' width="200px" alt="sandels"/>
@@ -114,7 +114,7 @@ function App() {
       <footer>
        
 
-          <h3>Kysyttävää? Ota yhteyttä Telegramissa @markuslaine</h3>
+          <h3>Kysyttävää? Ota yhteyttä Telegramissa @markuslaine tai s-postilla markus(a)athene.fi</h3>
           <p>Kaljakroketti 2023</p>
    
         
