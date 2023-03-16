@@ -1,38 +1,240 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
   text-align: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-family: 'Azeret Mono';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: start;
+  color: #0b0b0b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: 'Azeret Mono';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 19px;
+  text-align: start;
+  color: #FF5B5B;
+}
+
+.introduction {
+
+  justify-content: center;
+  padding: 4rem ;
+  width: 50%;
+  margin: auto;
+  display: flex;
+
+
+
+  flex-direction: column;
+}
+
+.side-by-side {
+  display: flex;
+  margin: auto;
+  width: 70%;
+
+  padding: 8rem;
+  flex-direction: row;
+}
+
+.full-container {
+  width: 100%;
+  margin: 0;
+}
+
+.side-by-side h2 {
+  width: 600px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.text-container {
+  display: inline-block;
+  padding: 3rem;
+  width: 50%;
+
+  flex-direction: column;
+}
+
+.img-container {
+  width: 400px;
+  display: inline-block;
+}
+
+p {
+  font-family: 'DM Sans';
+  text-align: start;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p a {
+  font-family: 'DM Sans';
+  text-align: start;
+  font-weight: 900;
+  color:#FF5B5B;
+ 
+}
+
+.a-link {
+  font-family: 'DM Sans';
+  text-align: start;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header img {
+  width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#saannot img {
+  padding: 5rem;
+}
+
+ol {
+  padding: 2rem;
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+li {
+  padding: 0 20px;
+  margin: 15px;
+
+}
+
+#saannot {
+  background-color: #eeebdf;
+  padding: 5rem;
+}
+
+#mobile-header-img {
+  display: none ;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .side-by-side {
+    flex-direction: column;
+    margin: 2rem auto; /* decrease the margin on the y-axis */
   }
-  to {
-    transform: rotate(360deg);
+
+  p {
+    font-size: 12px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+ #img-header {
+    display: none;
+    visibility: hidden;
+  }
+
+  .imgheader {
+    display: none;
+  }
+
+  .text-container {
+    margin: 0;
+    padding: 0 0 0 1rem;
+    width: auto; /* make the text container full width */
+  }
+
+  h2 {
+    font-size: 24px; /* decrease the font size */
+    max-width: 100%;
+    text-align: center; /* center the heading */
+    margin: 1rem 0; /* add some space between the heading and the content */
+    padding: 0;
+
+  }
+
+  .introduction {
+    padding: 0;
+    margin: auto;
+    width: 80%;
+  }
+
+  .side-by-side {
+    margin: auto;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .text-container {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+  }
+
+  #mobile-header-img {
+    display: block;
+    width: 100%;
+  }
+
+  .img-container {
+    margin: 0;
+    object-fit: contain;
+
+
+  }
+
+  img {
+    width: 150px;
+  }
+
+  ol {
+    padding: 0;
+  }
+  
+  #krokesetti {
+    display: none;
+  }
+
+  #saannot {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }
+
+
+
