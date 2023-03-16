@@ -48,8 +48,9 @@ h2 {
   margin: auto;
   width: 70%;
 
-  padding: 8rem;
+  padding: 4rem 8rem;
   flex-direction: row;
+  border-top: 1px solid #dedede;
 }
 
 .full-container {
@@ -59,6 +60,7 @@ h2 {
 
 .side-by-side h2 {
   width: 600px;
+
 }
 
 .bold {

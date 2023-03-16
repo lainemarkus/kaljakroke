@@ -21,7 +21,7 @@ function App() {
         </h3>
         <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon torstaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat athenelaiset sekä athenenmieliset, jotka löytävät ympärilleen 4-6 hengen joukkueen.
           Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei ole pakko juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.
-          Joukkueesi voi ilmoittautua höyhen- tai raskassarjaan (kts. sarjakuvaukset). Osallistumismaksut ovat 8€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.</p>
+          Joukkueesi voi ilmoittautua höyhen- tai raskassarjaan. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.</p>
 
       </div>
 
@@ -31,7 +31,8 @@ function App() {
         <div className="full-container">
           <p>Kaljakroketurnaukseen mahtuu 16 joukkuetta kumpaankin sarjaan. Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">16.4.2023 mennessä</span>!
           <br/><br/>Kutsuvieraille on oma kiintiö. Mikäli kutsuvieraskiintiöstä jää paikkoja yli, ne täytetään jonosijoille ilmoittautuneilla. 
-          <br/><br/><a className="a-link" href="https://athene.fi" rel="noreferrer noopener " target="blank" >Linkki ilmoittautumiseen</a>
+          <br/><br/>Osallistumismaksut ovat 8€/joukkue. 
+          <br/><br/><a className="a-link" href="https://athene.fi/ilmo/325" rel="noreferrer noopener " target="blank" >Linkki ilmoittautumiseen</a>
           </p>
           </div>
        
