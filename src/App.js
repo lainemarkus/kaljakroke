@@ -9,6 +9,8 @@ function App() {
 
   const handleContextMenu = (event) => {
     event.preventDefault();
+    
+    return false
   };
 
 
