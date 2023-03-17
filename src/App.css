@@ -146,6 +146,12 @@ li {
 
 #saannot img {
   transition: transform .3s ease-in-out;
+  -webkit-touch-callout: none; /* Disable callouts */
+  -webkit-user-select: none; /* Disable selection */
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
  }
         
 
