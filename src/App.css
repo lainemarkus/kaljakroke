@@ -146,7 +146,7 @@ li {
 
 #saannot img {
   transition: transform .3s ease-in-out;
-  -webkit-touch-callout: none; /* Disable callouts */
+    -webkit-touch-callout: none; /* Disable callouts */
   -webkit-user-select: none; /* Disable selection */
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -190,6 +190,12 @@ li {
 
 #mobile-header-img {
   display: none ;
+
+
+}
+
+footer p {
+  color: #adadad;
 }
 
 @keyframes shake {
@@ -320,8 +326,10 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-
+  
   }
+
+ 
 }
 
 

@@ -9,7 +9,7 @@ function App() {
 
   const handleContextMenu = (event) => {
     event.preventDefault();
-    
+
     return false
   };
 
@@ -134,7 +134,12 @@ function App() {
        
 
           <h3>Kysyttävää? Ota yhteyttä Telegramissa @markuslaine tai s-postilla markus(a)athene.fi</h3>
-          <p>Kaljakroketti 2023</p>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <p>Kaljakroketti 2022-2023</p>
+          <p>(c) Markus Laine</p>
    
         
       </footer>
