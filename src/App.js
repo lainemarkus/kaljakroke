@@ -1,9 +1,18 @@
 import './App.css';
 
-const headerImg = "/header1.png"
+const headerImg = "/header1-min.png"
 const mobileHeaderImg = '/mobilee.png'
 
+
+
 function App() {
+
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +28,7 @@ function App() {
         <h3>
           Wappu lähestyy, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas! 
         </h3>
-        <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon torstaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat athenelaiset sekä athenenmieliset, jotka löytävät ympärilleen 4-6 hengen joukkueen.
+        <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon torstaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilhapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen.
           Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei ole pakko juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.
         </p>
 
@@ -102,10 +111,19 @@ function App() {
 
           Tuomarit hoitavat radan, sääntöjen tarkkailun ja muut ongelmakohdat. Tuomarit eivät ole absoluuttisia eivätkä absolutisteja.</p>
       </div>
-      <div className="img-container">
-        <img src='/sandels.png' width="200px" alt="sandels"/>
+      <div className="img-container" >
+        <img 
+        id="beer" 
+        src='/sandels.png' 
+        width="200px" 
+        alt="sandels" 
+        draggable="false" 
+
+        onContextMenu={handleContextMenu} 
+        />
+
+
         <div>
-          <img src="/krokesetti.png" width="340px" alt="krokesetti" id="krokesetti"/>
         </div>
         </div>
 
