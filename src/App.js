@@ -1,7 +1,7 @@
 import './App.css';
 
 const headerImg = "/header1-min.png"
-const mobileHeaderImg = '/mobilee.png'
+const mobileHeaderImg = '/mob-header.png'
 
 
 
