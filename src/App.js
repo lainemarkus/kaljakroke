@@ -43,7 +43,7 @@ function App() {
           <p>Kaljakrokettiturnaukseen mahtuu 16 joukkuetta kumpaankin sarjaan. Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">16.4.2023 mennessä</span>!
           <br/><br/>Kutsuvieraille on oma kiintiö. Mikäli kutsuvieraskiintiöstä jää paikkoja yli, ne täytetään jonosijoille ilmoittautuneilla. 
           <br/><br/>Osallistumismaksut ovat 8€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
-          <br/><br/><a className="a-link" href="https://athene.fi/ilmo/325" rel="noreferrer noopener " target="blank" >Linkki ilmoittautumiseen</a>
+          <br/><br/><a className="a-link" href="https://athene.fi/ilmo/325" rel="noreferrer noopener " target="_blank" >Linkki ilmoittautumiseen</a>
           </p>
           </div>
        
@@ -112,6 +112,8 @@ function App() {
         <p>Kaljakrokettia pelataan, koska se on hauskaa. Kilpailua ei suotane otettavan vakavana urheiluna, sillä urheilu humalassa voi olla vaarallista. 
 
           Tuomarit hoitavat radan, sääntöjen tarkkailun ja muut ongelmakohdat. Tuomarit eivät ole absoluuttisia eivätkä absolutisteja.</p>
+          <p>Tapahtumassa noudatetaan <a className="a-link" href="https://athene.fi/periaatteet" rel="noreferrer noopener" target="_blank">Athenen yhteisiä periaatteita.</a></p>
+
       </div>
       <div className="img-container" >
         <img 
