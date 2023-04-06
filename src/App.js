@@ -19,8 +19,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       
-        <img src={headerImg} alt="header" id="img-header" className="imgheader" />
-        <img src={mobileHeaderImg} alt="mobile-header" id="mobile-header-img"/>
+        <img src={headerImg} alt="header" id="img-header" className="imgheader" placeholder="blurred"/>
+        <img src={mobileHeaderImg} alt="mobile-header" id="mobile-header-img" placeholder="blurred"/>
 
       </header>
 
