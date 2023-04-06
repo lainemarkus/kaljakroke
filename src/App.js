@@ -28,10 +28,10 @@ function App() {
 
       <div className="introduction">
         <h3>
-          Wappu lähestyy, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas! 
+          Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas! 
         </h3>
         <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon torstaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilhapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen.
-          Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei ole pakko juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.
+          Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.
         </p>
 
       </div>
