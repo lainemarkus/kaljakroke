@@ -90,6 +90,7 @@ function App() {
         <div className="text-container">
 
         <h2>Säännöt</h2>
+        <p><a href="https://bit.ly/3ZK5elt" rel="noreferrer noopener " target="_blank">Rules in English</a></p>
         <ol>
           <li>Aloitus tapahtuu osumalla aloitustolppaan. Pallo asetetaan mailan mitan päähänaloituksesta, ja osuttaessa tolppaan joukkue saa uuden lyönnin. Jos pallo vierii kauemmas kuin mailan mitta ennen osumista aloitustolppaan, sen saa seuraavalla kierroksella tuoda jälleen mailan mitan päähän.</li>
 
