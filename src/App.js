@@ -69,10 +69,10 @@ function App() {
   
       <div className="full-container">
         
-        <h3>16.00 Alkulohkot A ja B</h3>
-        <h3>16.45 Alkulohkot C ja D</h3>
-        <h3>17.30 Jatkosarjat</h3>
-        <h3>18.15 Finaali</h3>
+        <h3>16.30 Alkulohkot A ja B</h3>
+        <h3>17.15 Alkulohkot C ja D</h3>
+        <h3>18.00 Jatkosarjat</h3>
+        <h3>18.45 Finaali</h3>
 
      
         </div>
