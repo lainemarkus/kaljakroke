@@ -44,6 +44,7 @@ function App() {
           <br/><br/>Kutsuvieraille on oma kiintiö. Mikäli kutsuvieraskiintiöstä jää paikkoja yli, ne täytetään jonosijoille ilmoittautuneilla. 
           <br/><br/>Osallistumismaksut ovat 8€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <br/><br/><a className="a-link" href="https://athene.fi/ilmo/event/325" rel="noreferrer noopener " target="_blank" >Linkki ilmoittautumiseen</a>
+          <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka pukeutua omaan yhteneväiseen peliasuun.</p>
           </p>
           </div>
        
