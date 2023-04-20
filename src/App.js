@@ -140,7 +140,7 @@ function App() {
       <footer>
        
 
-          <h3>Kysyttävää? Ota yhteyttä Telegramissa @markuslaine tai s-postilla markus(a)athene.fi</h3>
+          <h3>Kysyttävää? Ota yhteyttä Telegramissa @markuslaine tai s-postilla yhteiso(a)athene.fi</h3>
           <br/>
           <br/>
           <br/>
