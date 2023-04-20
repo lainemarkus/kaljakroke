@@ -2,7 +2,7 @@ import './App.css';
 
 const headerImg = "/header1-min.png"
 const mobileHeaderImg = '/mob-header.png'
-const pdfFile = '/Turnauskaaviot.pdf'
+const pdfFile = '/turnauskaaviot-1.pdf'
 
 
 
