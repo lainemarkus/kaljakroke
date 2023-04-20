@@ -76,7 +76,7 @@ function App() {
         <h3>18.00 Jatkosarjat</h3>
         <h3>18.45 Finaalit</h3>
 
-        <a href={pdfFile} target='_blank' rel="noreferrer noopener">Turnauskaaviot</a>
+        <a className="a-link" href={pdfFile} target='_blank' rel="noreferrer noopener">Turnauskaaviot</a>
 
      
         </div>
