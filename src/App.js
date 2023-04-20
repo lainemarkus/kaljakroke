@@ -2,6 +2,7 @@ import './App.css';
 
 const headerImg = "/header1-min.png"
 const mobileHeaderImg = '/mob-header.png'
+const pdfFile = '/Turnauskaaviot.pdf'
 
 
 
@@ -73,7 +74,9 @@ function App() {
         <h3>16.30 Alkulohkot A ja B</h3>
         <h3>17.15 Alkulohkot C ja D</h3>
         <h3>18.00 Jatkosarjat</h3>
-        <h3>18.45 Finaali</h3>
+        <h3>18.45 Finaalit</h3>
+
+        <a href={pdfFile} target='_blank' rel="noreferrer noopener">Turnauskaaviot</a>
 
      
         </div>
