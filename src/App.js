@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const headerImg = "/kroke2.png"
 const mobileHeaderImg = '/mobkroke.png'
-const pdfFile = '/turnauskaaviot-1.pdf'
+// const pdfFile = '/turnauskaaviot-1.pdf'
 const santtububble = '/sandels2.png'
 
 
@@ -81,7 +81,7 @@ function App() {
           <br/><br/>Kutsuvieraille on oma kiintiö. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia. Kutsuvierasilmoittautuminen on auki aiemmin ja kaikki ylijääneet paikat lisätään avoimeen lipunmyyntiin!
           <br/><br/>Osallistumismaksut ovat 15€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka omaan yhteneväiseen peliasuun.</p>
-          <br/><br/><a className="a-link" href="" rel="noreferrer noopener " target="_blank" >Linkki ilmoittautumiseen lisätään tähän lähempänä!</a>
+          <br/><br/>Linkki ilmoittautumiseen lisätään tähän lähempänä!
           </p>
           </div>
        
@@ -129,7 +129,7 @@ function App() {
 
           </div>
 
-          <p><a className="a-link" target='_blank' rel="noreferrer noopener">Turnauskaaviot ovat saatavilla pian ilmoittautumisen sulkeuduttua</a></p>
+          <p>Turnauskaaviot ovat saatavilla pian ilmoittautumisen sulkeuduttua</p>
 
       
         </div>
