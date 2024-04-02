@@ -1,89 +1,142 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 
-const headerImg = "/header1-min.png"
-const mobileHeaderImg = '/mob-header.png'
+const headerImg = "/kroke2.png"
+const mobileHeaderImg = '/mobkroke.png'
 const pdfFile = '/turnauskaaviot-1.pdf'
+const santtububble = '/sandels2.png'
 
 
 
 function App() {
 
-  const handleContextMenu = (event) => {
-    event.preventDefault();
-
-    return false
-  };
 
 
+    const [isSticky, setIsSticky] = useState(false);
+  
+    useEffect(() => {
+      const headerPic = document.querySelector('.headerpic');
+  
+      const handleScroll = () => {
+        const headerPicHeight = headerPic.offsetHeight;
+        const scrollY = window.scrollY;
+  
+        if (scrollY > headerPicHeight) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
-  return (
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+  
+      return false
+    };
+
+    return (
     <div className="App">
-      <header className="App-header">
-      
+      <div className="headerpic">
         <img src={headerImg} alt="header" id="img-header" className="imgheader" placeholder="blurred"/>
         <img src={mobileHeaderImg} alt="mobile-header" id="mobile-header-img" placeholder="blurred"/>
-
+      </div>
+      <header className={`App-header ${isSticky ? 'sticky' : ''}`}>
+        <h1 className={`kaljakroketti ${isSticky ? 'sticky' : ''}`}>
+          MEGAKALJAKROKETTI
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#ilmo">Ilmo</a></li>
+                <li><a href="#sarjat">Sarjat</a></li>
+                <li><a href="#aikataulu">Aikataulu</a></li>
+                <li><a href="#saannot">Säännöt</a></li>
+            </ul>
+        </nav>
       </header>
 
       <section>
-
-      <div className="introduction">
-        <h3>
-          Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas! 
-        </h3>
-        <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon torstaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilhapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen.
-          Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.
-        </p>
-
+      <div className='introduction-container'>
+        <div className='introduction-picture-container'>
+            <img src={santtububble} alt="santtu" id="santtu-bubble" placeholder='blurred'/>
+        </div>
+        <div className="introduction">
+          <h3>
+            Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas! 
+          </h3>
+          <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon lauantaina 27.4. Alvarin aukiolla Athenen XXV juhlavuoden kunniaksi Megakaljakrokettina. Mega-etuliitteen kunniaksi olemme tuplanneet höyhensarjan joukkuemäärän sekä järjestämme tapahtumalle jatkot Otaniemessä. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilihapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen. Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.</p>
+        </div>
       </div>
-
-      <div className="side-by-side">
+      <div className="side-by-side" id='ilmo'>
       
         <h2>Ilmoittautuminen</h2>
         <div className="full-container">
-          <p>Kaljakrokettiturnaukseen mahtuu 16 joukkuetta kumpaankin sarjaan. Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">16.4.2023 mennessä</span>!
-          <br/><br/>Kutsuvieraille on oma kiintiö. Mikäli kutsuvieraskiintiöstä jää paikkoja yli, ne täytetään jonosijoille ilmoittautuneilla. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia.
-          <br/><br/>Osallistumismaksut ovat 8€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
+          <p>Megakaljakrokettiturnaukseen mahtuu 32 joukkuetta höyhensarjaan ja 16 raskassarjaan. Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">12.4.2024 alkaen</span>, mutta viimeistään <span className="bold"> 21.4.2024</span> mennessä KideAppissa!
+          <br/><br/>Kutsuvieraille on oma kiintiö. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia. Kutsuvierasilmoittautuminen on auki aiemmin ja kaikki ylijääneet paikat lisätään avoimeen lipunmyyntiin!
+          <br/><br/>Osallistumismaksut ovat 15€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka omaan yhteneväiseen peliasuun.</p>
-          <br/><br/><a className="a-link" href="https://athene.fi/ilmo/event/325" rel="noreferrer noopener " target="_blank" >Linkki ilmoittautumiseen</a>
+          <br/><br/><a className="a-link" href="" rel="noreferrer noopener " target="_blank" >Linkki ilmoittautumiseen lisätään tähän lähempänä!</a>
           </p>
           </div>
        
      
       </div>
 
-      <div className="side-by-side">
+      <div className="side-by-side" id='sarjat'>
       <h2>Sarjat</h2>
         <div className="full-container">
         
           <h3>Höyhensarja</h3>
-          <p>Jos krokettitaitosi ovat vasta jalostumassa taikka päässeet ruostumaan phabuunnuttua, Höyhensarja voi olla sinua varten! Varsinkin jos nautit ennemmin sääntöjen mukaisesta kuin niitä jatkuvasti rikkovasta pelistartegiasta sekä keskustelet mieluusti vastapelaajien ja tuomarien kanssa normaalilla puheäänellä, ilmottaudu tähän kevyimpään sarjaan!</p><br/>
+          <p>Jos krokettitaitosi ovat vasta jalostumassa taikka päässeet ruostumaan phabuunnuttua, Höyhensarja voi olla sinua varten! Varsinkin jos nautit ennemmin sääntöjen mukaisesta kuin niitä jatkuvasti rikkovasta pelistrategiasta sekä keskustelet mieluusti vastapelaajien ja tuomarien kanssa normaalilla puheäänellä, ilmottaudu tähän kevyimpään sarjaan!</p><br/>
           <h3>Raskassarja</h3>
           <p>Jos taas olet kuluttanut enemmänkin nurmikkoa eikä kaljan kellotus hirvitä, jatka lukemista! Raskaassa sarjassa pelaajat ovat hitusen taitavampia eli kenttä haastavampi, pelistrategiat likaisempia ja uhoaminen kovempaa. Jos olet valmis tekemään mitä vain voiton eteen, ilmoittaudu tähän sarjaan!</p>
+          <p></p>
+          <p className="italic">Sarjat ovat kuitenkin suuntaa antavia ja todellinen taso selviää paikan päällä – me järjestäjät kun emme voi ilmoittautuneiden taitotasoa etukäteen tietää. Muistakaa, että sopimatonta käytöstä tuomaria tai kanssapelaajia kohtaan ei kummassakaan sarjassa suvaita.</p>
         </div>
    
      
       </div>
 
-      <div className="side-by-side">
+      <div className="side-by-side" id='aikataulu'>
       
-      <h2>Aikataulu</h2>
+        <h2>Aikataulu</h2>
   
-      <div className="full-container">
+        <div className="full-container">
         
-        <h3>16.30 Alkulohkot A ja B</h3>
-        <h3>17.15 Alkulohkot C ja D</h3>
-        <h3>18.00 Jatkosarjat</h3>
-        <h3>18.45 Finaalit</h3>
+          <div className='aikataulu-container'>
+            <div>
+              <h4>Höyhensarja</h4>
+              <h3>16.30 Alkulohkot A, B, C ja D</h3>
+              <h3>17.15 Alkulohkot E, F, G ja H</h3>
+              <h3>18.00 Jatkosarjat (lohko 1)</h3>
+              <h3>18.45 Jatkosarjat (lohko 2)</h3>
+              <h3>19.30 Finaalit</h3>
 
-        <p><a className="a-link" href={pdfFile} target='_blank' rel="noreferrer noopener">Turnauskaaviot</a></p>
+            </div>
+            <div>
+              <h4>Raskassarja</h4>
+              <h3>16.30 Alkulohkot A ja B</h3>
+              <h3>17.15 Alkulohkot C ja D</h3>
+              <h3>18.00 Jatkosarjat</h3>
+              <h3>19.00 Finaalit</h3>
+            </div>
 
-     
+          </div>
+
+          <p><a className="a-link" target='_blank' rel="noreferrer noopener">Turnauskaaviot ovat saatavilla pian ilmoittautumisen sulkeuduttua</a></p>
+
+      
         </div>
       
      
      
-        </div>
+      </div>
    
 
 
@@ -123,8 +176,8 @@ function App() {
       <div className="img-container" >
         <img 
         id="beer" 
-        src='/sandels.png' 
-        width="200px" 
+        src='/santtu-uus.png' 
+        width="400px" 
         alt="sandels" 
         draggable="false" 
 
@@ -140,13 +193,13 @@ function App() {
       <footer>
        
 
-          <h3>Kysyttävää? Ota yhteyttä Telegramissa @markuslaine tai s-postilla yhteiso(a)athene.fi</h3>
+          <h3>Kysyttävää? Ota yhteyttä Telegramissa @vilppuviinikainen tai s-postilla yhteiso(a)athene.fi</h3>
           <br/>
           <br/>
           <br/>
           <br/>
-          <p>Kaljakroketti 2022-2023</p>
-          <p>(c) Markus Laine</p>
+          <p>Kaljakroketti 2022-2024</p>
+          <p>(c) Maria Toivainen (2024) & Markus Laine </p>
    
         
       </footer>

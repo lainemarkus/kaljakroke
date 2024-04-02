@@ -16,7 +16,29 @@ footer {
   flex-direction: column;
 }
 
+.kaljakroketti {
+  font-family: 'Azeret Mono';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: start;
+  color: #eeece3;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+.kaljakroketti.sticky {
+  font-family: 'Azeret Mono';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: start;
+  color: #355E3B;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 h3 {
   font-family: 'Azeret Mono';
@@ -35,7 +57,31 @@ h2 {
   font-size: 28px;
   line-height: 19px;
   text-align: start;
-  color: #FF5B5B;
+  color: #355E3B;
+}
+
+h4 {
+  font-family: 'Azeret Mono';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: start;
+  color: #355E3B;
+}
+
+.introduction-container{
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: center ;
+  margin: auto;
+  padding-top: 2%;
+}
+
+.introduction-picture-container{
+  width: 400px;
+  display: inline-block;
 }
 
 .introduction {
@@ -61,6 +107,14 @@ h2 {
   border-top: 1px solid #dedede;
 }
 
+.aikataulu-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
 .full-container {
   width: 100%;
   margin: 0;
@@ -73,6 +127,10 @@ h2 {
 
 .bold {
   font-weight: 800;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-container {
@@ -102,7 +160,7 @@ p a {
   font-family: 'DM Sans';
   text-align: start;
   font-weight: 900;
-  color:#FF5B5B;
+  color:#D998D9;
  
 }
 
@@ -115,21 +173,63 @@ p a {
 }
 
 .App-header {
-  background-color: #282c34;
-  height: auto;
+  background-color: #eeece3;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  top: 0px;
+  width: 100%;
 }
 
-.App-header img {
+.App-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.headerpic {
+  position: sticky;
+  background-color: #eeece3;
+}
+.headerpic img {
   width: 100%;
   height: auto;
 }
 
+
 #saannot img {
   padding: 0rem;
 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;
+  width: 25%;
+}
+
+nav ul li a {
+  font-family: 'Azeret Mono';
+  color: #355E3B;
+  text-decoration: none;
 }
 
 ol {
@@ -142,7 +242,6 @@ ol {
 li {
   padding: 0 20px;
   margin: 15px;
-
 }
 
 #saannot img {
@@ -189,10 +288,14 @@ li {
   text-align: center;
 }
 
+#santtu-bubble {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
 #mobile-header-img {
   display: none ;
-
-
 }
 
 footer p {
@@ -227,6 +330,15 @@ footer p {
 
 
 @media only screen and (max-width: 600px) {
+
+  nav ul li {
+    padding: 10px;
+    margin-right: 10px; /* Reduce the margin between items */
+  }
+
+  nav ul li a {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
 
   img:hover: {
     transform: scale(1.00) rotate(0deg);
@@ -295,19 +407,57 @@ footer p {
   }
 
   .img-container {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
     object-fit: contain;
     margin-bottom: 5rem;
     min-height: 150px;
+    align-items: center;
+  }
 
 
+  .App-header {
+    background-color: #eeece3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0px;
+    width: 100%;
+  }
+
+  .kaljakroketti{
+    display: none;
+  }
+
+  .introduction-container{
+    display: flex;
+    width: 100%;
+    justify-content: center ;
+    margin: auto;
+    padding-top: 2%;
+    flex-direction: column-reverse;
+  }
+
+  .introduction-picture-container{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #santtu-bubble {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
   }
 
   img {
-    width: 150px;
+    width: 70%;
   }
 
-
+  .aikataulu-container {
+    flex-direction: column;
+    justify-content: center;
+  }
   
   ol {
     padding: 0;
