@@ -68,7 +68,7 @@ function App() {
         </div>
         <div className="introduction">
           <h3>
-            Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas! 
+            Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas – tänä vuonna Athenen 25. juhlavuoden kunniaksi MEGAkaljakrokettina!
           </h3>
           <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon lauantaina 27.4. Alvarin aukiolla Athenen XXV juhlavuoden kunniaksi Megakaljakrokettina. Mega-etuliitteen kunniaksi olemme tuplanneet höyhensarjan joukkuemäärän sekä järjestämme tapahtumalle jatkot Otaniemessä. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilihapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen. Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.</p>
         </div>
@@ -81,7 +81,7 @@ function App() {
           <br/><br/>Kutsuvieraille on oma kiintiö. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia. Kutsuvierasilmoittautuminen on auki aiemmin ja kaikki ylijääneet paikat lisätään avoimeen lipunmyyntiin!
           <br/><br/>Osallistumismaksut ovat 15€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka omaan yhteneväiseen peliasuun.</p>
-          <br/><br/>Linkki ilmoittautumiseen lisätään tähän lähempänä!
+          <br/><br/><a className="a-link" href="https://kide.app/events/e0b408f6-994d-4fec-a5db-e042414ca686" rel="noreferrer noopener " target="_blank" > Linkki ilmoittautumiseen </a>
           </p>
           </div>
        
