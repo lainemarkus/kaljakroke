@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const headerImg = "/kroke2.png"
 const mobileHeaderImg = '/mobkroke.png'
-// const pdfFile = '/turnauskaaviot-1.pdf'
+const pdfFile = '/Pelikaavio.pdf'
 const santtububble = '/sandels2.png'
 
 
@@ -129,7 +129,7 @@ function App() {
 
           </div>
 
-          <p>Turnauskaaviot ovat saatavilla pian ilmoittautumisen sulkeuduttua</p>
+          <p><a className="a-link" href={pdfFile} target='_blank' rel="noreferrer noopener">Turnauskaaviot</a></p>
 
       
         </div>
