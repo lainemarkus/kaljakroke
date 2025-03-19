@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const headerImg = "/desktop2025.png"
 const mobileHeaderImg = '/mobiili2025.png'
-const pdfFile = '/Pelikaavio.pdf'
+/*const pdfFile = '/Pelikaavio.pdf'*/
 const santtububble = '/sandels2.png'
 
 
