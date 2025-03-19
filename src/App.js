@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 
-const headerImg = "/kroke2.png"
-const mobileHeaderImg = '/mobkroke.png'
+const headerImg = "/desktop2025.png"
+const mobileHeaderImg = '/mobiili2025.png'
 const pdfFile = '/Pelikaavio.pdf'
 const santtububble = '/sandels2.png'
 
@@ -48,9 +48,7 @@ function App() {
         <img src={mobileHeaderImg} alt="mobile-header" id="mobile-header-img" placeholder="blurred"/>
       </div>
       <header className={`App-header ${isSticky ? 'sticky' : ''}`}>
-        <h1 className={`kaljakroketti ${isSticky ? 'sticky' : ''}`}>
-          MEGAKALJAKROKETTI
-        </h1>
+
         <nav>
             <ul>
                 <li><a href="#ilmo">Ilmo</a></li>
@@ -67,22 +65,22 @@ function App() {
             <img src={santtububble} alt="santtu" id="santtu-bubble" placeholder='blurred'/>
         </div>
         <div className="introduction">
-          <h3>
-            Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas – tänä vuonna Athenen 25. juhlavuoden kunniaksi MEGAkaljakrokettina!
+          <h3 className="tekstikeskelle">
+            Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas!
           </h3>
-          <p>Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon lauantaina 27.4. Alvarin aukiolla Athenen XXV juhlavuoden kunniaksi Megakaljakrokettina. Mega-etuliitteen kunniaksi olemme tuplanneet höyhensarjan joukkuemäärän sekä järjestämme tapahtumalle jatkot Otaniemessä. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilihapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen. Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.</p>
+          <p className="tekstikeskelle">Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon sunnuntaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilihapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen. Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.</p>
         </div>
       </div>
       <div className="side-by-side" id='ilmo'>
       
         <h2>Ilmoittautuminen</h2>
         <div className="full-container">
-          <p>Megakaljakrokettiturnaukseen mahtuu 32 joukkuetta höyhensarjaan ja 16 raskassarjaan. Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">12.4.2024 alkaen</span>, mutta viimeistään <span className="bold"> 21.4.2024</span> mennessä KideAppissa!
+          <p>Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">1.4.2025 klo 12.00 alkaen</span>, mutta viimeistään <span className="bold"> 15.4.2025 klo 23.59</span> mennessä KideAppissa!</p>
           <br/><br/>Kutsuvieraille on oma kiintiö. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia. Kutsuvierasilmoittautuminen on auki aiemmin ja kaikki ylijääneet paikat lisätään avoimeen lipunmyyntiin!
-          <br/><br/>Osallistumismaksut ovat 15€/joukkue. Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
+          <br/><br/>Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka omaan yhteneväiseen peliasuun.</p>
-          <br/><br/><a className="a-link" href="https://kide.app/events/e0b408f6-994d-4fec-a5db-e042414ca686" rel="noreferrer noopener " target="_blank" > Linkki ilmoittautumiseen </a>
-          </p>
+          <br/><br/><p>Linkki ilmoittautumiseen tulee tähän</p>
+          
           </div>
        
      
@@ -105,12 +103,12 @@ function App() {
 
       <div className="side-by-side" id='aikataulu'>
       
-        <h2>Aikataulu</h2>
+        <h2>Aikataulu<br/>(tarkentuu myöhemmin) </h2>
   
         <div className="full-container">
         
           <div className='aikataulu-container'>
-            <div>
+            <div className="sarjapadding">
               <h4>Höyhensarja</h4>
               <h3>16.30 Alkulohkot A, B, C ja D</h3>
               <h3>17.15 Alkulohkot E, F, G ja H</h3>
@@ -119,7 +117,7 @@ function App() {
               <h3>19.30 Finaalit</h3>
 
             </div>
-            <div>
+            <div className="sarjapadding">
               <h4>Raskassarja</h4>
               <h3>16.30 Alkulohkot A ja B</h3>
               <h3>17.15 Alkulohkot C ja D</h3>
@@ -129,7 +127,7 @@ function App() {
 
           </div>
 
-          <p><a className="a-link" href={pdfFile} target='_blank' rel="noreferrer noopener">Turnauskaaviot</a></p>
+          <p>Tarjoamme turnauskaavion tässä lähempänä tapahtumaa</p>
 
       
         </div>
@@ -146,8 +144,8 @@ function App() {
         
         <div className="text-container">
 
-        <h2>Säännöt</h2>
-        <p><a href="https://bit.ly/3ZK5elt" rel="noreferrer noopener " target="_blank">Rules in English</a></p>
+        <h2 className="tekstikeskelle">Säännöt</h2>
+        <p className="tekstikeskelle"><a href="https://bit.ly/3ZK5elt" rel="noreferrer noopener " target="_blank">Rules in English</a></p>
         <ol>
           <li>Aloitus tapahtuu osumalla aloitustolppaan. Pallo asetetaan mailan mitan päähänaloituksesta, ja osuttaessa tolppaan joukkue saa uuden lyönnin. Jos pallo vierii kauemmas kuin mailan mitta ennen osumista aloitustolppaan, sen saa seuraavalla kierroksella tuoda jälleen mailan mitan päähän.</li>
 
@@ -173,8 +171,7 @@ function App() {
           <p>Tapahtumassa noudatetaan <a className="a-link" href="https://athene.fi/periaatteet" rel="noreferrer noopener" target="_blank">Athenen yhteisiä periaatteita.</a></p>
 
       </div>
-      <div className="img-container" >
-        <img 
+      <img 
         id="beer" 
         src='/santtu-uus.png' 
         width="400px" 
@@ -184,16 +181,11 @@ function App() {
         onContextMenu={handleContextMenu} 
         />
 
-
-        <div>
-        </div>
-        </div>
-
     </section>
       <footer>
        
 
-          <h3>Kysyttävää? Ota yhteyttä Telegramissa @vilppuviinikainen tai s-postilla yhteiso(a)athene.fi</h3>
+          <h3>Kysyttävää? Ota yhteyttä Telegramissa @ToiKimi tai s-postilla yhteiso(a)athene.fi</h3>
           <br/>
           <br/>
           <br/>
