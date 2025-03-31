@@ -79,7 +79,7 @@ function App() {
           <br/><br/>Kutsuvieraille on oma kiintiö. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia. Kutsuvierasilmoittautuminen on auki aiemmin ja kaikki ylijääneet paikat lisätään avoimeen lipunmyyntiin!
           <br/><br/>Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka omaan yhteneväiseen peliasuun.</p>
-          <br/><br/><p>Linkki ilmoittautumiseen tulee tähän</p>
+          <br/><br/><p><a className="a-link" href="https://kide.app/events/4dcc39e9-26d1-4289-a740-8faf83d1cf93" rel="noreferrer noopener " target="_blank" > Linkki ilmoittautumiseen </a></p>
           
           </div>
        
