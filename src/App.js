@@ -68,18 +68,18 @@ function App() {
           <h3 className="tekstikeskelle">
             Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas!
           </h3>
-          <p className="tekstikeskelle">Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon sunnuntaina 27.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilihapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen. Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.</p>
+          <p className="tekstikeskelle">Perinteinen kaljakrokettiturnaus järjestetään tänä vuonna Wappuviikon sunnuntaina 19.4. Alvarin aukiolla. Suurta urheilujuhlaa ovat tavan mukaan tervetulleita viettämään kaikki kroketista sekä hyvästä seurasta nauttivat hiilihapotettujen juomien ystävät, jotka löytävät ympärilleen 4-6 hengen joukkueen. Perinteisesti taidon sijaan olennaisempaa on pitää hauskaa, joten asenne ja huumorintaju ovat aikaisempaa kokemusta tärkeämpiä. Kaljaakaan ei tarvitse juoda, vaan sen voi korvata muilla hiilihapotetuilla tölkkijuomilla.</p>
         </div>
       </div>
       <div className="side-by-side" id='ilmo'>
       
         <h2>Ilmoittautuminen</h2>
         <div className="full-container">
-          <p>Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">1.4.2025 klo 12.00 alkaen</span>, mutta viimeistään <span className="bold"> 15.4.2025 klo 23.59</span> mennessä KideAppissa!</p>
+          <p>Kerää 4-6 hengen tiimi ja ilmoittaudu mukaan kaljakrokettiin <span className="bold">1.4.2026 klo 12.00 alkaen</span>, mutta viimeistään <span className="bold"> 10.4.2026 klo 23.59</span> mennessä KideAppissa!</p>
           <br/><br/>Kutsuvieraille on oma kiintiö. Kutsuvieraiksi on kutsuttu muiden kiltojen ja ainejärjestöjen edustajia. Kutsuvierasilmoittautuminen on auki aiemmin ja kaikki ylijääneet paikat lisätään avoimeen lipunmyyntiin!
           <br/><br/>Osallistumismaksulla katetaan sakkojuomat ja krokettivälineet, eli varsinaiset pelijuomat tulee tuoda paikalle itse.
           <p>Peliasu on vapaa mutta suositeltava - pelaajat voivat pukeutua edustamansa järjestön haalareihin taikka omaan yhteneväiseen peliasuun.</p>
-          <br/><br/><p><a className="a-link" href="https://kide.app/events/4dcc39e9-26d1-4289-a740-8faf83d1cf93" rel="noreferrer noopener " target="_blank" > Linkki ilmoittautumiseen </a></p>
+          <br/><br/><p><a className="a-link" href="https://kide.app/events/3457cf12-45f9-41af-af9d-bb469db88766" rel="noreferrer noopener " target="_blank" > Linkki ilmoittautumiseen </a></p>
           
           </div>
        
@@ -103,26 +103,23 @@ function App() {
 
       <div className="side-by-side" id='aikataulu'>
       
-        <h2>Aikataulu<br/>(tarkentuu myöhemmin) </h2>
+        <h2>Aikataulu<br/><br/>(tarkentuu myöhemmin) </h2>
   
         <div className="full-container">
         
           <div className='aikataulu-container'>
             <div className="sarjapadding">
               <h4>Höyhensarja</h4>
-              <h3>16.30 Alkulohkot A, B, C ja D</h3>
-              <h3>17.15 Alkulohkot E, F, G ja H</h3>
-              <h3>18.00 Jatkosarjat (lohko 1)</h3>
-              <h3>18.45 Jatkosarjat (lohko 2)</h3>
-              <h3>19.30 Finaalit</h3>
+              <h3>14.00 Alkulohkot</h3>
+              <h3>15.00 Jatkosarjat </h3>
+              <h3>17.00 Finaali</h3>
 
             </div>
             <div className="sarjapadding">
               <h4>Raskassarja</h4>
-              <h3>16.30 Alkulohkot A ja B</h3>
-              <h3>17.15 Alkulohkot C ja D</h3>
-              <h3>18.00 Jatkosarjat</h3>
-              <h3>19.00 Finaalit</h3>
+              <h3>14.00 Alkulohkot</h3>
+              <h3>15.00 Jatkosarjat</h3>
+              <h3>17.00 Finaali</h3>
             </div>
 
           </div>
@@ -185,7 +182,7 @@ function App() {
       <footer>
        
 
-          <h3>Kysyttävää? Ota yhteyttä Telegramissa @ToiKimi tai s-postilla yhteiso(a)athene.fi</h3>
+          <h3>Kysyttävää? Ota yhteyttä Telegramissa @yhteisoneuvos tai s-postilla yhteiso(a)athene.fi</h3>
           <br/>
           <br/>
           <br/>
