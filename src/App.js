@@ -103,7 +103,7 @@ function App() {
 
       <div className="side-by-side" id='aikataulu'>
       
-        <h2>Aikataulu<br/><br/>(tarkentuu myöhemmin) </h2>
+        <h2>Aikataulu<br/><br/></h2>
   
         <div className="full-container">
         
@@ -111,22 +111,29 @@ function App() {
             <div className="sarjapadding">
               <h4>Höyhensarja</h4>
               <h3>14.00 Alkulohkot</h3>
-              <h3>15.00 Jatkosarjat </h3>
+              <h3>15.30 Jatkosarjat </h3>
               <h3>17.00 Finaali</h3>
 
             </div>
             <div className="sarjapadding">
               <h4>Raskassarja</h4>
               <h3>14.00 Alkulohkot</h3>
-              <h3>15.00 Jatkosarjat</h3>
+              <h3>15.30 Jatkosarjat</h3>
               <h3>17.00 Finaali</h3>
             </div>
 
           </div>
 
-          <p>Tarjoamme turnauskaavion tässä lähempänä tapahtumaa</p>
-
-      
+          <p>
+            <a 
+              href="https://docs.google.com/spreadsheets/d/1GRefhfwbFS13W29G7yb94y62r5E3INNz4IOkCtlQ-YU/edit?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="sheets-link"
+            >
+              LIVESEURANTA
+            </a>
+          </p>
         </div>
       
      
